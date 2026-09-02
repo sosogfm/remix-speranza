@@ -230,7 +230,7 @@ const ProductDetail = () => {
                   </>
                 )}
 
-                <div className="absolute top-5 left-5 flex flex-col gap-2">
+                <div className="absolute top-3 left-3 md:top-5 md:left-5 flex flex-col gap-2">
                   {product.new && (
                     <span className="px-3 py-1.5 text-[10px] font-semibold tracking-[0.2em] uppercase bg-foreground text-background">
                       Novo
