@@ -36,11 +36,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://speranzatelie.com.br/produto/joia-do-dia</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://speranzatelie.com.br/produto/descanso-de-colher</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -96,11 +91,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://speranzatelie.com.br/produto/caneca-pet-4086</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://speranzatelie.com.br/produto/cuia-frida-4085</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -126,6 +116,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://speranzatelie.com.br/produto/caneca-pet-4086</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://speranzatelie.com.br/produto/prato-nascimento-2882</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -141,7 +136,22 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://speranzatelie.com.br/produto/pires-ondulado-4361</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://speranzatelie.com.br/produto/xicara-lavanda-4397</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://speranzatelie.com.br/produto/prato-retrato-3999</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://speranzatelie.com.br/produto/xicara-sutileza-3629</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -151,7 +161,57 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://speranzatelie.com.br/produto/nossa-senhora-11cm-8811</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://speranzatelie.com.br/produto/caneca-primavera-4321</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://speranzatelie.com.br/produto/kit-dindos-0458</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://speranzatelie.com.br/produto/caneca-bee-1093</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://speranzatelie.com.br/produto/caneca-silver-6565</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://speranzatelie.com.br/produto/nossa-senhora-aparecida-11cm-3302</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://speranzatelie.com.br/produto/kit-bem-vinda-1470</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://speranzatelie.com.br/produto/kit-floresca-4340</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://speranzatelie.com.br/produto/kit-mimo-8127</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://speranzatelie.com.br/produto/kit-docura-6002</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://speranzatelie.com.br/produto/kit-fe-6203</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -161,17 +221,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://speranzatelie.com.br/oficinas/panetoneira-g</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://speranzatelie.com.br/oficinas/tacas-de-champagne</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://speranzatelie.com.br/oficinas/bordado-em-bastidor-outubro</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

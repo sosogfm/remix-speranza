@@ -226,7 +226,7 @@ const Index = () => {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-10">
             {latestProducts.map((product, index) => (
               <ProductCard key={product.id} product={product} index={index} />
             ))}

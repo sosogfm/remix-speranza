@@ -73,7 +73,7 @@ export const ProductCard = ({ product, index = 0, variant = "default" }: Product
         {/* Imagem */}
         <div
           className={cn(
-            "relative overflow-hidden bg-muted/50 mb-5",
+            "relative overflow-hidden bg-muted/50 mb-3 md:mb-5",
             variant === "large" ? "aspect-[3/4]" : "aspect-[4/5]"
           )}
           onMouseEnter={() => hasSecondImage && setSlide(1)}
@@ -103,7 +103,7 @@ export const ProductCard = ({ product, index = 0, variant = "default" }: Product
                 type="button"
                 onClick={(e) => step(e, -1)}
                 aria-label="Foto anterior"
-                className="absolute left-3 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-background/85 backdrop-blur-md shadow-sm"
+                className="hidden md:block absolute left-3 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-background/85 backdrop-blur-md shadow-sm"
               >
                 <ChevronLeft className="w-4 h-4" />
               </button>
@@ -111,7 +111,7 @@ export const ProductCard = ({ product, index = 0, variant = "default" }: Product
                 type="button"
                 onClick={(e) => step(e, 1)}
                 aria-label="Próxima foto"
-                className="absolute right-3 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-background/85 backdrop-blur-md shadow-sm"
+                className="hidden md:block absolute right-3 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-background/85 backdrop-blur-md shadow-sm"
               >
                 <ChevronRight className="w-4 h-4" />
               </button>
@@ -188,7 +188,7 @@ export const ProductCard = ({ product, index = 0, variant = "default" }: Product
           )}
 
 
-          <h3 className="font-serif text-xl text-foreground transition-colors duration-300 group-hover:text-primary leading-snug">
+          <h3 className="font-serif text-lg md:text-xl text-foreground transition-colors duration-300 group-hover:text-primary leading-snug">
             {product.name}
           </h3>
 
