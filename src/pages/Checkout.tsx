@@ -82,7 +82,7 @@ const Checkout = () => {
     ) : null;
 
 
-  if (items.length === 0) {
+  if (items.length === 0 && !result) {
     return (
       <Layout>
         <div className="container-narrow py-16 md:py-28 text-center space-y-6">
