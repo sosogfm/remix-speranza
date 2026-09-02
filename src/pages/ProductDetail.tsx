@@ -215,14 +215,14 @@ const ProductDetail = () => {
                   <>
                     <button
                       onClick={prevImage}
-                      className="absolute left-5 top-1/2 -translate-y-1/2 p-3 bg-background/90 backdrop-blur-md"
+                      className="absolute left-3 md:left-5 top-1/2 -translate-y-1/2 p-2 md:p-3 bg-background/90 backdrop-blur-md"
                       aria-label="Imagem anterior"
                     >
-                      <ChevronLeft className="w-5 h-5" />
+                      <ChevronLeft className="w-4 h-4 md:w-5 md:h-5" />
                     </button>
                     <button
                       onClick={nextImage}
-                      className="absolute right-5 top-1/2 -translate-y-1/2 p-3 bg-background/90 backdrop-blur-md"
+                      className="absolute right-3 md:right-5 top-1/2 -translate-y-1/2 p-2 md:p-3 bg-background/90 backdrop-blur-md"
                       aria-label="Próxima imagem"
                     >
                       <ChevronRight className="w-5 h-5" />
