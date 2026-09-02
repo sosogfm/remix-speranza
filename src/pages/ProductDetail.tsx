@@ -195,7 +195,7 @@ const ProductDetail = () => {
       <section className="py-[6vw] sm:py-10 md:py-16">
         <div className="container-full">
           <div className="grid lg:grid-cols-12 gap-[6vw] sm:gap-12 lg:gap-20">
-            <div className="lg:col-span-7 space-y-4">
+            <div className="lg:col-span-7 space-y-4 min-w-0 w-full">
               <div className="relative aspect-[4/5] overflow-hidden bg-muted/30 group">
                 <div
                   className="flex h-full w-full transition-transform duration-700 ease-out"
@@ -273,7 +273,7 @@ const ProductDetail = () => {
 
             </div>
 
-            <div className="lg:col-span-5 lg:sticky lg:top-28 lg:self-start">
+            <div className="lg:col-span-5 lg:sticky lg:top-28 lg:self-start min-w-0 w-full">
               {collection && (
                 <Link
                   to={`/produtos?colecao=${collection.slug}`}
@@ -343,11 +343,11 @@ const ProductDetail = () => {
                 />
               )}
 
-              <div className="flex items-center gap-4">
+              <div className="flex flex-wrap items-center gap-3 sm:gap-4">
                 {product.isQuoteOnly ? (
                   <Button
                     asChild
-                    className="flex-1 rounded-none h-12 text-sm tracking-[0.15em] uppercase"
+                    className="w-full rounded-none h-12 text-sm tracking-[0.15em] uppercase"
                   >
                     <a href={quoteUrl} target="_blank" rel="noreferrer">
                       <MessageCircle className="w-4 h-4 mr-2" />
@@ -356,34 +356,51 @@ const ProductDetail = () => {
                   </Button>
                 ) : (
                   <>
-                    <QuantitySelector
-                      quantity={quantity}
-                      onQuantityChange={setQuantity}
-                      max={Math.max(product.stock, 1)}
-                    />
+                    <div className="shrink-0">
+                      <QuantitySelector
+                        quantity={quantity}
+                        onQuantityChange={setQuantity}
+                        max={Math.max(product.stock, 1)}
+                      />
+                    </div>
+                    <Button
+                      variant="outline"
+                      onClick={handleWishlist}
+                      aria-label="Favoritar peça"
+                      className="rounded-none h-12 w-12 p-0 shrink-0"
+                    >
+                      <Heart
+                        className={cn(
+                          "w-4 h-4",
+                          isInWishlist(product.id) && "fill-primary text-primary"
+                        )}
+                      />
+                    </Button>
                     <Button
                       onClick={handleAddToCart}
                       disabled={outOfStock}
-                      className="flex-1 rounded-none h-12 text-sm tracking-[0.15em] uppercase"
+                      className="w-full sm:flex-1 sm:w-auto min-w-0 rounded-none h-12 text-xs sm:text-sm tracking-[0.15em] uppercase order-first sm:order-none basis-full sm:basis-auto"
                     >
-                      <ShoppingBag className="w-4 h-4 mr-2" />
+                      <ShoppingBag className="w-4 h-4 mr-2 shrink-0" />
                       {outOfStock ? "Esgotado" : "Adicionar à sacola"}
                     </Button>
                   </>
                 )}
-                <Button
-                  variant="outline"
-                  onClick={handleWishlist}
-                  aria-label="Favoritar peça"
-                  className="rounded-none h-12 w-12 p-0"
-                >
-                  <Heart
-                    className={cn(
-                      "w-4 h-4",
-                      isInWishlist(product.id) && "fill-primary text-primary"
-                    )}
-                  />
-                </Button>
+                {product.isQuoteOnly && (
+                  <Button
+                    variant="outline"
+                    onClick={handleWishlist}
+                    aria-label="Favoritar peça"
+                    className="rounded-none h-12 w-12 p-0 shrink-0"
+                  >
+                    <Heart
+                      className={cn(
+                        "w-4 h-4",
+                        isInWishlist(product.id) && "fill-primary text-primary"
+                      )}
+                    />
+                  </Button>
+                )}
               </div>
 
               {infoBlocks.length > 0 && (
