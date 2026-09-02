@@ -192,11 +192,11 @@ const ProductDetail = () => {
         </div>
       </div>
 
-      <section className="py-10 md:py-16">
+      <section className="py-6 md:py-16">
         <div className="container-full">
-          <div className="grid lg:grid-cols-12 gap-12 lg:gap-20">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-20">
             <div className="lg:col-span-7 space-y-4">
-              <div className="relative aspect-[4/5] overflow-hidden bg-muted/30 group">
+              <div className="relative w-full aspect-[4/5] max-h-[58vh] md:max-h-none overflow-hidden bg-muted/30 group">
                 <div
                   className="flex h-full w-full transition-transform duration-700 ease-out"
                   style={{ transform: `translateX(-${slideIndex * 100}%)` }}
