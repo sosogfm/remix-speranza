@@ -192,11 +192,11 @@ const ProductDetail = () => {
         </div>
       </div>
 
-      <section className="py-6 md:py-16">
+      <section className="py-[6vw] sm:py-10 md:py-16">
         <div className="container-full">
-          <div className="grid lg:grid-cols-12 gap-8 lg:gap-20">
+          <div className="grid lg:grid-cols-12 gap-[6vw] sm:gap-12 lg:gap-20">
             <div className="lg:col-span-7 space-y-4">
-              <div className="relative w-full aspect-[4/5] max-h-[58vh] md:max-h-none overflow-hidden bg-muted/30 group">
+              <div className="relative aspect-[4/5] overflow-hidden bg-muted/30 group">
                 <div
                   className="flex h-full w-full transition-transform duration-700 ease-out"
                   style={{ transform: `translateX(-${slideIndex * 100}%)` }}
@@ -215,14 +215,14 @@ const ProductDetail = () => {
                   <>
                     <button
                       onClick={prevImage}
-                      className="absolute left-3 md:left-5 top-1/2 -translate-y-1/2 p-2 md:p-3 bg-background/90 backdrop-blur-md"
+                      className="absolute left-[3%] top-1/2 -translate-y-1/2 p-3 bg-background/90 backdrop-blur-md"
                       aria-label="Imagem anterior"
                     >
-                      <ChevronLeft className="w-4 h-4 md:w-5 md:h-5" />
+                      <ChevronLeft className="w-5 h-5" />
                     </button>
                     <button
                       onClick={nextImage}
-                      className="absolute right-3 md:right-5 top-1/2 -translate-y-1/2 p-2 md:p-3 bg-background/90 backdrop-blur-md"
+                      className="absolute right-[3%] top-1/2 -translate-y-1/2 p-3 bg-background/90 backdrop-blur-md"
                       aria-label="Próxima imagem"
                     >
                       <ChevronRight className="w-5 h-5" />
@@ -230,7 +230,7 @@ const ProductDetail = () => {
                   </>
                 )}
 
-                <div className="absolute top-3 left-3 md:top-5 md:left-5 flex flex-col gap-2">
+                <div className="absolute top-[3%] left-[3%] flex flex-col gap-2">
                   {product.new && (
                     <span className="px-3 py-1.5 text-[10px] font-semibold tracking-[0.2em] uppercase bg-foreground text-background">
                       Novo
