@@ -126,8 +126,8 @@ export const ProductCard = ({ product, index = 0, variant = "default" }: Product
             onClick={handleWishlistToggle}
             aria-label={inWishlist ? "Remover dos favoritos" : "Adicionar aos favoritos"}
             className={cn(
-              "absolute right-5 p-2.5 rounded-full transition-all duration-500 z-10",
-              discountPct != null && discountPct > 0 ? "top-16" : "top-5",
+              "absolute right-2 md:right-5 p-1.5 md:p-2.5 rounded-full transition-all duration-500 z-10",
+              discountPct != null && discountPct > 0 ? "top-10 md:top-16" : "top-2 md:top-5",
               "bg-background/90 backdrop-blur-md hover:bg-background shadow-sm",
               "md:opacity-0 md:translate-y-2 md:group-hover:opacity-100 md:group-hover:translate-y-0",
               inWishlist && "md:opacity-100 md:translate-y-0"
@@ -135,31 +135,31 @@ export const ProductCard = ({ product, index = 0, variant = "default" }: Product
           >
             <Heart
               className={cn(
-                "w-4 h-4 transition-all duration-300",
+                "w-3 h-3 md:w-4 md:h-4 transition-all duration-300",
                 inWishlist ? "fill-primary text-primary scale-110" : "text-foreground"
               )}
             />
           </button>
 
           {/* Selos */}
-          <div className="absolute top-5 left-5 flex flex-col gap-2">
+          <div className="absolute top-2 left-2 md:top-5 md:left-5 flex flex-col gap-1 md:gap-2 max-w-[70%]">
             {product.new && (
-              <span className="px-3 py-1.5 text-[10px] font-semibold tracking-[0.2em] uppercase bg-foreground text-background">
+              <span className="px-1.5 py-0.5 md:px-3 md:py-1.5 text-[7px] md:text-[10px] font-semibold tracking-[0.12em] md:tracking-[0.2em] uppercase leading-tight bg-foreground text-background">
                 Novidade
               </span>
             )}
             {product.isPersonalizable && (
-              <span className="px-3 py-1.5 text-[10px] font-semibold tracking-[0.2em] uppercase bg-primary text-primary-foreground">
+              <span className="px-1.5 py-0.5 md:px-3 md:py-1.5 text-[7px] md:text-[10px] font-semibold tracking-[0.12em] md:tracking-[0.2em] uppercase leading-tight bg-primary text-primary-foreground">
                 Personalizável
               </span>
             )}
             {lowStock && (
-              <span className="px-3 py-1.5 text-[10px] font-semibold tracking-[0.2em] uppercase bg-background text-foreground border border-border">
+              <span className="px-1.5 py-0.5 md:px-3 md:py-1.5 text-[7px] md:text-[10px] font-semibold tracking-[0.12em] md:tracking-[0.2em] uppercase leading-tight bg-background text-foreground border border-border">
                 Últimas unidades
               </span>
             )}
             {outOfStock && (
-              <span className="px-3 py-1.5 text-[10px] font-semibold tracking-[0.2em] uppercase bg-muted text-muted-foreground">
+              <span className="px-1.5 py-0.5 md:px-3 md:py-1.5 text-[7px] md:text-[10px] font-semibold tracking-[0.12em] md:tracking-[0.2em] uppercase leading-tight bg-muted text-muted-foreground">
                 Esgotada
               </span>
             )}
@@ -167,7 +167,7 @@ export const ProductCard = ({ product, index = 0, variant = "default" }: Product
 
           {/* Faixa de oferta */}
           {discountPct != null && discountPct > 0 && (
-            <span className="absolute top-5 right-0 px-4 py-1.5 text-[11px] font-semibold tracking-[0.15em] uppercase bg-primary text-primary-foreground shadow-sm">
+            <span className="absolute top-2 md:top-5 right-0 px-2 py-0.5 md:px-4 md:py-1.5 text-[8px] md:text-[11px] font-semibold tracking-[0.12em] md:tracking-[0.15em] uppercase bg-primary text-primary-foreground shadow-sm">
               -{discountPct}%
             </span>
           )}
