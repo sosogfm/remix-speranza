@@ -406,7 +406,7 @@ const ProductDetail = () => {
         <section className="py-14 md:py-20 border-t border-border">
           <div className="container-full">
             <h2 className="font-serif text-3xl mb-10">Você também pode gostar</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-10 sm:gap-x-6 md:gap-x-8 md:gap-y-14">
               {relatedProducts.map((p, i) => (
                 <ProductCard key={p.id} product={p} index={i} />
               ))}
