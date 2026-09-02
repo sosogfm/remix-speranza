@@ -195,7 +195,7 @@ const ProductDetail = () => {
       <section className="py-[6vw] sm:py-10 md:py-16">
         <div className="container-full">
           <div className="grid lg:grid-cols-12 gap-[6vw] sm:gap-12 lg:gap-20">
-            <div className="lg:col-span-7 space-y-4">
+            <div className="lg:col-span-7 space-y-4 min-w-0 w-full">
               <div className="relative aspect-[4/5] overflow-hidden bg-muted/30 group">
                 <div
                   className="flex h-full w-full transition-transform duration-700 ease-out"
