@@ -1,7 +1,3 @@
-# Remix Speranza 2.0
-
-Create a design-driven ecommerce website for a boutique brand selling home and lifestyle objects.
-
 Visual style: warm, sophisticated, modern Scandinavian influence. Neutral colors, textured backgrounds, elegant serif typography.
 
 Product category: home decor and objects (lamps, ceramics, furniture, vases).
