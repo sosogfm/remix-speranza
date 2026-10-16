@@ -21,19 +21,28 @@ A aplicação foi estruturada utilizando ferramentas modernas que otimizam o des
 
 O projeto oferece flexibilidade e pode ser iniciado tanto em ambientes baseados no gerenciador nativo **Bun** quanto no ecossistema tradicional do **Node.js**.
 
+### Passo Prévio: Obtenção do Código e Acesso à Pasta
+
+Se você baixou o projeto como um arquivo compactado (ZIP) ou clonou o repositório oficial, certifique-se de entrar na pasta correta do projeto (`remix-speranza-main`) antes de rodar os comandos de instalação:
+
+```bash
+# Caso vá clonar via Git utilizando o endereço oficial do repositório:
+git clone https://github.com/sosogfm/remix-speranza.git
+
+# CASO VOCÊ ESTEJA UTILIZANDO A PASTA EXTRAÍDA DIRETAMENTE DA ENTREGA:
+cd remix-speranza-main
+```
+
+Após garantir que o seu terminal está apontando para a raiz da pasta do projeto, escolha uma das opções abaixo para instalar as dependências e subir o servidor:
+
 ### Opção 1: Inicialização Nativa com Bun (Recomendado)
 Certifique-se de ter o Bun instalado em sua máquina.
 
-1. Clone o repositório e acesse o diretório do projeto:
-   ```bash
-   git clone https://github.com
-   cd remix-speranza
-   ```
-2. Instale as dependências locais:
+1. Instale as dependências locais:
    ```bash
    bun install
    ```
-3. Inicie o servidor de desenvolvimento utilizando o executor integrado do ecossistema:
+2. Inicie o servidor de desenvolvimento utilizando o executor integrado do ecossistema:
    ```bash
    bunx --bun vite
    ```
@@ -41,16 +50,11 @@ Certifique-se de ter o Bun instalado em sua máquina.
 ### Opção 2: Inicialização Alternativa com Node.js e npm
 Caso prefira operar sem o utilitário `bunx`, o projeto pode ser executado diretamente através do gerenciador de pacotes do Node.js:
 
-1. Clone o repositório e acesse o diretório do projeto:
-   ```bash
-   git clone https://github.com
-   cd remix-speranza
-   ```
-2. Instale as dependências mapeadas no `package.json`:
+1. Instale as dependências mapeadas no `package.json`:
    ```bash
    npm install
    ```
-3. Execute diretamente o binário do construtor Vite para subir o servidor local:
+2. Execute diretamente o binário do construtor Vite para subir o servidor local:
    ```bash
    npx vite
    ```
