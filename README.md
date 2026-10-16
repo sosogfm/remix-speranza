@@ -1,74 +1,68 @@
 # Remix Speranza
 
-O **Remix Speranza** é uma plataforma de e-commerce premium voltada para o mercado de alta decoração, curadoria de objetos e o conceito de *slow-living*. O programa foi desenvolvido para oferecer uma experiência de compra digital imersiva, sofisticada e fluida, servindo como uma vitrine e sistema de vendas para produtos artesanais e de design, tais como luminárias, cerâmicas, móveis e vasos.
+O **Remix Speranza** é uma aplicação web de e-commerce voltada para o mercado de alta decoração, curadoria de objetos e o conceito de *slow-living*. A plataforma foi projetada para atuar como uma vitrine digital sofisticada e minimalista para produtos de design e artesanais, tais como luminárias, cerâmicas, móveis e vasos.
 
-Sua finalidade é unir uma estética minimalista de forte influência escandinava com uma engenharia de software de alta performance, garantindo que a navegação por peças exclusivas seja tão agradável quanto visitar uma galeria física de design.
-
----
-
-## 🛠️ Tecnologias e Dependências
-
-A aplicação foi construída utilizando ferramentas modernas do ecossistema de desenvolvimento web focado em tipagem estática, performance e componentização:
-
-* **Linguagem Principal:** TypeScript (fornecendo segurança de tipos e inteligência no desenvolvimento).
-* **Ambiente de Execução / Gerenciadores:** Node.js (com suporte nativo e travas via `package.json`) ou Bun (com arquivos de lock dedicados `bun.lock` e `bun.lockb`).
-* **Framework de Construção & Bundler:** Vite (`vite.config.ts`), que assegura compilação ultra-rápida e hot-reload durante o desenvolvimento.
-* **Interface e Estilização:** Tailwind CSS (`tailwind.config.ts` e `postcss.config.js`), utilizado para aplicar a paleta de cores neutras e texturas de fundo que definem a identidade visual do projeto.
-* **Persistência de Dados & Backend:** Supabase (diretório `/supabase`), atuando como infraestrutura para o banco de dados, autenticação de usuários e gerenciamento do catálogo de produtos.
-* **Qualidade de Código e Testes:** ESLint (`eslint.config.js`) para padronização de código e Vitest (`vitest.config.ts`) para a execução de testes automatizados.
+A finalidade deste programa é unir uma interface de forte influência escandinava — com uso de cores neutras, tipografia elegante e espaçamentos generosos — a uma arquitetura moderna de software, permitindo que a navegação e a simulação de compras ocorram de forma rápida e responsiva.
 
 ---
 
-## 🚀 Execução e Uso
+## 🛠️ Tecnologias e Ferramentas
+
+O ecossistema do projeto é baseado em ferramentas focadas em performance e tipagem estática:
+
+* **Linguagem Principal:** TypeScript (garante previsibilidade e segurança no fluxo de dados).
+* **Ambiente de Execução e Pacotes:** Bun (utilizado nativamente para o gerenciamento de dependências, geração de travas via `bun.lock` / `bun.lockb` e execução de scripts de infraestrutura).
+* **Framework de Construção & Bundler:** Vite (`vite.config.ts`), responsável pelo empacotamento rápido e servidor local de desenvolvimento.
+* **Interface e Estilização:** Tailwind CSS (`tailwind.config.ts`), configurado para criar a identidade visual limpa e os fundos texturizados do e-commerce.
+* **Componentes de UI:** Bibliotecas integradas sob a estrutura do arquivo `components.json`.
+
+---
+
+## 🚀 Execução e Inicialização
 
 ### Pré-requisitos
-Antes de iniciar, certifique-se de ter instalado em sua máquina o **Node.js** (LTS) e o **npm**, ou alternativamente o **Bun**.
+Para rodar este projeto, é necessário ter o **Bun** instalado em sua máquina. A inicialização e a preparação do ambiente utilizam o executor de pacotes do Bun (`bunx`), impossibilitando a execução exclusiva por meio do Node.js/npm padrão sem este utilitário.
 
 ### Passo a Passo para Iniciar o Programa
 
-1. **Clonar e Acessar o Repositório:**
+1. **Clonar o Repositório:**
+   Execute o comando abaixo preenchendo com a URL completa do seu repositório:
    ```bash
    git clone https://github.com
    cd remix-speranza
    ```
 
 2. **Configurar as Variáveis de Ambiente:**
-   Duplique o arquivo de exemplo `.env.development` existente na raiz do projeto, renomeando-o para `.env`:
+   A aplicação requer configurações locais para estabelecer comunicação com os serviços externos. Crie o arquivo `.env` na raiz do projeto:
    ```bash
-   cp .env.development .env
+   touch .env
    ```
-   Abra o arquivo `.env` e insira as chaves de API fornecidas pelo seu painel do **Supabase** (`SUPABASE_URL` e `SUPABASE_ANON_KEY`).
+   *Nota: O arquivo `.env.development` presente na raiz armazena configurações gerais de escopo de desenvolvimento e não deve ser modificado para chaves privadas.*
 
 3. **Instalar as Dependências:**
-   Instale os pacotes necessários utilizando o gerenciador de sua preferência:
+   Instale os pacotes necessários utilizando o ecossistema do Bun:
    ```bash
-   npm install
-   # ou, se preferir usar o Bun:
    bun install
    ```
 
-4. **Iniciar o Servidor de Desenvolvimento:**
-   Execute o comando de inicialização contido nos scripts do projeto:
+4. **Preparar o Ambiente e Iniciar:**
+   Para garantir que todos os componentes e rotinas estejam vinculados antes da execução do servidor local, utilize os seguintes comandos:
    ```bash
-   npm run dev
-   # ou, utilizando o Bun:
-   bun run dev
+   bunx --bun vite
    ```
-
-O terminal exibirá um endereço local ativo (ex: `http://localhost:5173`). Abra essa URL em seu navegador de preferência para interagir com o e-commerce.
+   O terminal informará o endereço local ativo (ex: `http://localhost:5173`). Abra esta URL no seu navegador para interagir com o programa.
 
 ---
 
-## 🛍️ Fluxo Principal de Uso e Interação
+## 🛍️ Funcionamento e Fluxo de Uso Principal
 
-Ao abrir a interface gráfica do **Remix Speranza**, o usuário realiza o fluxo padrão de compra através de interações visuais:
+A navegação e a interação com o **Remix Speranza** ocorrem de forma visual através dos componentes da interface de usuário:
 
-1. **Exploração da Vitrine (Homepage):** O usuário visualiza banners e fotografias em estilo *lifestyle* ambientando os produtos no mundo real, além de coleções selecionadas pelo curador da loja.
-2. **Filtragem e Catálogo (Product Listing Page):** Ao navegar para a listagem, o usuário interage com um grid editorial espaçado, projetado para reduzir a fadiga visual, onde pode clicar sobre qualquer objeto (ex: uma luminária ou vaso de cerâmica).
-3. **Página de Detalhes (Product Detail Page):** O usuário analisa imagens contextuais ampliadas e lê a história/origem artesanal daquela peça. Nesta seção, ele pode acionar duas interações principais:
-   * Clicar no botão da **Wishlist** para salvar o item em sua lista de desejos.
-   * Clicar no botão **Adicionar ao Carrinho**.
-4. **Gerenciamento do Carrinho (Cart Drawer):** Ao adicionar um produto, um carrinho lateral desliza na tela de forma suave, exibindo a foto do item, quantidade e a atualização em tempo real do valor total do pedido.
+1. **Navegação e Catálogo:** O usuário explora a página inicial de estilo editorial e entra na listagem de produtos. Os itens são exibidos em uma grade espaçada com fotografias focadas no design das peças.
+2. **Interação na Página de Detalhes:** Ao selecionar um objeto, o usuário é direcionado para a página exclusiva do produto, onde encontra descrições focadas no processo de fabricação.
+3. **Adicionar Itens à Sacola:** Ao clicar no botão para adicionar um produto à sacola:
+   * **O que acontece na tela:** Uma notificação visual de sucesso surge na interface confirmando a inclusão do produto. A aplicação **não** abre painéis ou carrinhos laterais suspensos (*drawers*).
+4. **Gerenciamento de Compras (Página da Sacola):** Para visualizar, alterar quantidades ou remover os itens selecionados, o usuário deve navegar até a **página dedicada à sacola de compras**.
 
-### Resultado Esperado
-O programa responde a todas as ações por meio de transições de tela altamente fluidas e assíncronas. Os dados das interações (como itens no carrinho ou estado de autenticação) são processados e validados em tempo real junto às APIs do Supabase, garantindo estabilidade e persistência de dados durante toda a sessão do cliente.
+### Persistência de Dados e Resultado Esperado
+Os produtos adicionados, preferências do usuário e o estado atual da sacola de compras são **salvos e persistidos localmente no navegador**. Embora a estrutura de backend esteja mapeada, a validação imediata das ações da sacola ocorre localmente de forma assíncrona, garantindo que o usuário não perca seus dados ao atualizar a página ou fechar o navegador.
