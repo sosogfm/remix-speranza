@@ -6,7 +6,7 @@ A finalidade deste projeto é fornecer um catálogo interativo e dinâmico onde 
 
 ---
 
-## 🛠️ Tecnologias e Ferramentas
+## Tecnologias e Ferramentas
 
 A aplicação foi estruturada utilizando ferramentas modernas que otimizam o desempenho e a manutenção do código:
 
@@ -17,7 +17,7 @@ A aplicação foi estruturada utilizando ferramentas modernas que otimizam o des
 
 ---
 
-## 🚀 Execução e Inicialização
+## Execução e Inicialização
 
 O projeto oferece flexibilidade e pode ser iniciado tanto em ambientes baseados no gerenciador nativo **Bun** quanto no ecossistema tradicional do **Node.js**.
 
@@ -63,7 +63,7 @@ Após rodar o comando de sua escolha, o terminal informará o endereço local at
 
 ---
 
-## 🛍️ Funcionamento e Fluxo de Uso Principal
+## Funcionamento e Fluxo de Uso Principal
 
 A interação com a plataforma do Speranza Ateliê ocorre de forma totalmente visual através das rotinas da interface gráfica:
 
